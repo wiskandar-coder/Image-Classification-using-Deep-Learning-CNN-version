@@ -24,8 +24,9 @@ The project consists of classifying images of dogs using Convolutional Neural Ne
         - Second, trying to optimize the models by training more layers at the end of the models architecture and using augmented images
         - Check the performance of the model using train and validation accuracy and loss on each step, and finally the test loss and accuracy on the model that give the best validation accuracy and loss
 
-- Application in https://github.com/wiskandar-coder/Image-Classification-using-Deep-Learning-CNN-version-API
+- Application locally in '2_application', and globally in https://github.com/wiskandar-coder/Image-Classification-using-Deep-Learning-CNN-version-API
   - An app will serve as a test where the user enter the image of the dog, and the application will give the most likely dog race.
-  - The application is deployed in HEROKU; the link to the app and API: https://dog-breeds-classification-633a199dadcb.herokuapp.com/
+  - The application is deployed locally using the Gradio interface in '2_application'
+  - The application is deployed globally using HEROKU; the link to the app and API: https://dog-breeds-classification-633a199dadcb.herokuapp.com/
 
 A powerpoint presentation of the project can be shared under request.
