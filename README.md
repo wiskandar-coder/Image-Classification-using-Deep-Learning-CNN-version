@@ -11,7 +11,7 @@ The project consists of classifying images of dogs using Convolutional Neural Ne
     - Dividing the images into 490 batches (42 images/batch)
     - Dividing the batches into 80% train, 10% validation, and 10% test
   
-- Modelisation in '1_notebook'
+- Modelisation in '1_notebook'\
   I started with developing my own model
     - Developing my own CNN model using multiple convolutional 2D layers and MaxPooling, and finally GlobalAveragePooling + DropOut + Dense layers
     - Train the model on the image without augmentation, and then with image augmentation
