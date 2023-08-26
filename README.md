@@ -18,6 +18,7 @@ I started with developing my own model
     - Finding the best learning rate for Adam optimizer using keras_tuner
     - Using the optimum learning rate for the final train of the model with augmented images
     - Check the performance of the model using train and validation accuracy and loss on each step, and finally the test loss and accuracy on the final train\
+
 Then I used transfer learning to compare with my own model
     - 
 - Application in https://github.com/wiskandar-coder/Auto-Tagging-Stackoverflow-API
