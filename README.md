@@ -11,16 +11,19 @@ The project consists of classifying images of dogs using Convolutional Neural Ne
     - Dividing the images into 490 batches (42 images/batch)
     - Dividing the batches into 80% train, 10% validation, and 10% test
   
-- Modelisation in '1_notebook'\
-I started with developing my own model
-    - Developing my own CNN model using multiple convolutional 2D layers and MaxPooling, and finally GlobalAveragePooling + DropOut + Dense layers
-    - Train the model on the image without augmentation, and then with image augmentation
-    - Finding the best learning rate for Adam optimizer using keras_tuner
-    - Using the optimum learning rate for the final train of the model with augmented images
-    - Check the performance of the model using train and validation accuracy and loss on each step, and finally the test loss and accuracy on the final train\
+- Modelisation in '1_notebook'
+    - I started with developing my own model
+        - Developing my own CNN model using multiple convolutional 2D layers and MaxPooling, and finally GlobalAveragePooling + DropOut + Dense layers
+        - Train the model on the image without augmentation, and then with image augmentation
+        - Finding the best learning rate for Adam optimizer using keras_tuner
+        - Using the optimum learning rate for the final train of the model with augmented images
+        - Check the performance of the model using train and validation accuracy and loss on each step, and finally the test loss and accuracy on the final train
+    - Then I used transfer learning to compare with my own model
+        - I did use VGG_16, ResNet_50, and EfficientNet v2 B0 for the testing
+        - First, training the final layer to adapt to the 120 dog breeds
+        - Second, trying to optimize the models by training more layers at the end of the models architecture and using augmented images
+        - Check the performance of the model using train and validation accuracy and loss on each step, and finally the test loss and accuracy on the model that give the best validation accuracy and loss
 
-Then I used transfer learning to compare with my own model
-    - 
 - Application in https://github.com/wiskandar-coder/Auto-Tagging-Stackoverflow-API
   - An app will serve as a test where the user enter the title and the body of the questions, and the application will suggest tags for the user.
   - The application is deployed in HEROKU; the link to the app and API: https://auto-tagging-stackoverflow.herokuapp.com/
